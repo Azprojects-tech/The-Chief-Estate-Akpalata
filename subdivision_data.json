@@ -1,0 +1,2404 @@
+{
+  "type": "FeatureCollection",
+  "name": "The Chief Estate Akpalata ? PVP combined parcels",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-01",
+        "ParcelID": "P1-01",
+        "phase": "phase-1",
+        "plotId": "1",
+        "Status": "sold",
+        "status": "sold",
+        "AreaSqm": 420.02,
+        "Shape_Area": 420.02,
+        "Shape_Leng": 85.32,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "phase-1-purchaser-1-4",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551504051360534,
+              6.581889184898736
+            ],
+            [
+              7.551583653014544,
+              6.581781739008413
+            ],
+            [
+              7.551621093758064,
+              6.581731695259423
+            ],
+            [
+              7.551504361522398,
+              6.581566879450168
+            ],
+            [
+              7.551415848269833,
+              6.5816832415031365
+            ],
+            [
+              7.5514138637304935,
+              6.5817077412476115
+            ],
+            [
+              7.551504051360534,
+              6.581889184898736
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-02",
+        "ParcelID": "P1-02",
+        "phase": "phase-1",
+        "plotId": "2",
+        "Status": "sold",
+        "status": "sold",
+        "AreaSqm": 394.15,
+        "Shape_Area": 394.15,
+        "Shape_Leng": 81.89,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "phase-1-purchaser-1-4",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551720442008171,
+              6.581598015918325
+            ],
+            [
+              7.551605327398004,
+              6.581431076029395
+            ],
+            [
+              7.551504361522398,
+              6.581566879450168
+            ],
+            [
+              7.551621093758064,
+              6.581731695259423
+            ],
+            [
+              7.551660323948799,
+              6.581678905723882
+            ],
+            [
+              7.551720442008171,
+              6.581598015918325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-03",
+        "ParcelID": "P1-03",
+        "phase": "phase-1",
+        "plotId": "3",
+        "Status": "sold",
+        "status": "sold",
+        "AreaSqm": 419.57,
+        "Shape_Area": 419.57,
+        "Shape_Leng": 92.08,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "phase-1-purchaser-1-4",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551628247333224,
+              6.582139052763326
+            ],
+            [
+              7.5517142891238835,
+              6.582034872061383
+            ],
+            [
+              7.551583653014544,
+              6.581781739008413
+            ],
+            [
+              7.551504051360534,
+              6.581889184898736
+            ],
+            [
+              7.551628247333224,
+              6.582139052763326
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-04",
+        "ParcelID": "P1-04",
+        "phase": "phase-1",
+        "plotId": "4",
+        "Status": "sold",
+        "status": "sold",
+        "AreaSqm": 424.31,
+        "Shape_Area": 424.31,
+        "Shape_Leng": 92.57,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "phase-1-purchaser-1-4",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5517142891238835,
+              6.582034872061383
+            ],
+            [
+              7.551801091359054,
+              6.581929771124819
+            ],
+            [
+              7.551660323948799,
+              6.581678905723882
+            ],
+            [
+              7.551621093758064,
+              6.581731695259423
+            ],
+            [
+              7.551583653014544,
+              6.581781739008413
+            ],
+            [
+              7.5517142891238835,
+              6.582034872061383
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-05",
+        "ParcelID": "P1-05",
+        "phase": "phase-1",
+        "plotId": "5",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 373.7,
+        "Shape_Area": 373.7,
+        "Shape_Leng": 88.4,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551801091359054,
+              6.581929771124819
+            ],
+            [
+              7.5518817754866205,
+              6.581831981117077
+            ],
+            [
+              7.551720442008171,
+              6.581598015918325
+            ],
+            [
+              7.551660323948799,
+              6.581678905723882
+            ],
+            [
+              7.551801091359054,
+              6.581929771124819
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-06",
+        "ParcelID": "P1-06",
+        "phase": "phase-1",
+        "plotId": "6",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 544.75,
+        "Shape_Area": 544.75,
+        "Shape_Leng": 98.52,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551720442008171,
+              6.581598015918325
+            ],
+            [
+              7.5518817754866205,
+              6.581831981117077
+            ],
+            [
+              7.5519905269585434,
+              6.581700417958549
+            ],
+            [
+              7.551818436421617,
+              6.581478076611166
+            ],
+            [
+              7.551720442008171,
+              6.581598015918325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-07",
+        "ParcelID": "P1-07",
+        "phase": "phase-1",
+        "plotId": "7",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 592.98,
+        "Shape_Area": 592.98,
+        "Shape_Leng": 101.28,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551818436421617,
+              6.581478076611166
+            ],
+            [
+              7.5519905269585434,
+              6.581700417958549
+            ],
+            [
+              7.552099235152726,
+              6.581568789526258
+            ],
+            [
+              7.55194183238545,
+              6.581339290504332
+            ],
+            [
+              7.551818436421617,
+              6.581478076611166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-08",
+        "ParcelID": "P1-08",
+        "phase": "phase-1",
+        "plotId": "8",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 419.6,
+        "Shape_Area": 419.6,
+        "Shape_Leng": 86.63,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551818436421617,
+              6.581478076611166
+            ],
+            [
+              7.551694804763157,
+              6.581270326835986
+            ],
+            [
+              7.551605327398004,
+              6.581431076029395
+            ],
+            [
+              7.551720442008171,
+              6.581598015918325
+            ],
+            [
+              7.551818436421617,
+              6.581478076611166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-09",
+        "ParcelID": "P1-09",
+        "phase": "phase-1",
+        "plotId": "9",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 541.91,
+        "Shape_Area": 541.91,
+        "Shape_Leng": 98.38,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551818436421617,
+              6.581478076611166
+            ],
+            [
+              7.55194183238545,
+              6.581339290504332
+            ],
+            [
+              7.551889520878609,
+              6.581263030623775
+            ],
+            [
+              7.5517844171427075,
+              6.5811097733393495
+            ],
+            [
+              7.551694804763157,
+              6.581270326835986
+            ],
+            [
+              7.551818436421617,
+              6.581478076611166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-10",
+        "ParcelID": "P1-10",
+        "phase": "phase-1",
+        "plotId": "10",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 415.86,
+        "Shape_Area": 415.86,
+        "Shape_Leng": 86.19,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551889520878609,
+              6.581263030623775
+            ],
+            [
+              7.551979300406404,
+              6.581095329747325
+            ],
+            [
+              7.5519896020238635,
+              6.581076084727477
+            ],
+            [
+              7.551883187705492,
+              6.580932581375784
+            ],
+            [
+              7.5517844171427075,
+              6.5811097733393495
+            ],
+            [
+              7.551889520878609,
+              6.581263030623775
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-11",
+        "ParcelID": "P1-11",
+        "phase": "phase-1",
+        "plotId": "11",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 528.15,
+        "Shape_Area": 528.15,
+        "Shape_Leng": 94.62,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551994566916205,
+              6.580733258994363
+            ],
+            [
+              7.551883187705492,
+              6.580932581375784
+            ],
+            [
+              7.5519896020238635,
+              6.581076084727477
+            ],
+            [
+              7.552135113898399,
+              6.580935978986971
+            ],
+            [
+              7.551994566916205,
+              6.580733258994363
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-12",
+        "ParcelID": "P1-12",
+        "phase": "phase-1",
+        "plotId": "12",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 588.15,
+        "Shape_Area": 588.15,
+        "Shape_Leng": 97.68,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552135113898399,
+              6.580935978986971
+            ],
+            [
+              7.5519896020238635,
+              6.581076084727477
+            ],
+            [
+              7.55197921035315,
+              6.581095199263071
+            ],
+            [
+              7.55210454784411,
+              6.5812791583209185
+            ],
+            [
+              7.552254464207319,
+              6.5811086174602
+            ],
+            [
+              7.552135113898399,
+              6.580935978986971
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-13",
+        "ParcelID": "P1-13",
+        "phase": "phase-1",
+        "plotId": "13",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 411.03,
+        "Shape_Area": 411.03,
+        "Shape_Leng": 84.34,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.551990569672779,
+              6.581408817246463
+            ],
+            [
+              7.55210454784411,
+              6.5812791583209185
+            ],
+            [
+              7.551979300406404,
+              6.581095329747325
+            ],
+            [
+              7.551889520878609,
+              6.581263030623775
+            ],
+            [
+              7.551990569672779,
+              6.581408817246463
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-14",
+        "ParcelID": "P1-14",
+        "phase": "phase-1",
+        "plotId": "14",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 389.88,
+        "Shape_Area": 389.88,
+        "Shape_Leng": 80.52,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552210271052135,
+              6.581434330016116
+            ],
+            [
+              7.55210454784411,
+              6.5812791583209185
+            ],
+            [
+              7.551990569672779,
+              6.581408817246463
+            ],
+            [
+              7.552099235152726,
+              6.581568789526258
+            ],
+            [
+              7.552210271052135,
+              6.581434330016116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-15",
+        "ParcelID": "P1-15",
+        "phase": "phase-1",
+        "plotId": "15",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 496.85,
+        "Shape_Area": 496.85,
+        "Shape_Leng": 91.29,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552254527718245,
+              6.581108545297856
+            ],
+            [
+              7.55210454784411,
+              6.5812791583209185
+            ],
+            [
+              7.552210271052135,
+              6.581434330016116
+            ],
+            [
+              7.5523570383435885,
+              6.5812567054399205
+            ],
+            [
+              7.552254527718245,
+              6.581108545297856
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-16",
+        "ParcelID": "P1-16",
+        "phase": "phase-1",
+        "plotId": "16",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 435.07,
+        "Shape_Area": 435.07,
+        "Shape_Leng": 86.8,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552421831525118,
+              6.581626054682184
+            ],
+            [
+              7.552525736728588,
+              6.5815000696994845
+            ],
+            [
+              7.552393262319554,
+              6.581308881625296
+            ],
+            [
+              7.552295277050885,
+              6.581432273837514
+            ],
+            [
+              7.552421831525118,
+              6.581626054682184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-17",
+        "ParcelID": "P1-17",
+        "phase": "phase-1",
+        "plotId": "17",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 525.54,
+        "Shape_Area": 525.54,
+        "Shape_Leng": 96.16,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5526792497092385,
+              6.58172168244197
+            ],
+            [
+              7.552525736728588,
+              6.5815000696994845
+            ],
+            [
+              7.552421831525118,
+              6.581626054682184
+            ],
+            [
+              7.55256784925355,
+              6.581849633460659
+            ],
+            [
+              7.5526792497092385,
+              6.58172168244197
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-18",
+        "ParcelID": "P1-18",
+        "phase": "phase-1",
+        "plotId": "18",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 463.95,
+        "Shape_Area": 463.95,
+        "Shape_Leng": 88.94,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552295277050885,
+              6.581432273837514
+            ],
+            [
+              7.5521827170357865,
+              6.58156405033406
+            ],
+            [
+              7.552315581276967,
+              6.581754885091806
+            ],
+            [
+              7.552421831525118,
+              6.581626054682184
+            ],
+            [
+              7.552295277050885,
+              6.581432273837514
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-19",
+        "ParcelID": "P1-19",
+        "phase": "phase-1",
+        "plotId": "19",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 503.91,
+        "Shape_Area": 503.91,
+        "Shape_Leng": 94.26,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552421831525118,
+              6.581626054682184
+            ],
+            [
+              7.552315581276967,
+              6.581754885091806
+            ],
+            [
+              7.552464511742462,
+              6.58196879601467
+            ],
+            [
+              7.55256784925355,
+              6.581849633460659
+            ],
+            [
+              7.552421831525118,
+              6.581626054682184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-20",
+        "ParcelID": "P1-20",
+        "phase": "phase-1",
+        "plotId": "20",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 419.65,
+        "Shape_Area": 419.65,
+        "Shape_Leng": 85.44,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552315581276967,
+              6.581754885091806
+            ],
+            [
+              7.5521827170357865,
+              6.58156405033406
+            ],
+            [
+              7.552086281705155,
+              6.581680557794846
+            ],
+            [
+              7.552216946739988,
+              6.581874477201274
+            ],
+            [
+              7.552315581276967,
+              6.581754885091806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-21",
+        "ParcelID": "P1-21",
+        "phase": "phase-1",
+        "plotId": "21",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 478.08,
+        "Shape_Area": 478.08,
+        "Shape_Leng": 91.9,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552315581276967,
+              6.581754885091806
+            ],
+            [
+              7.552216946739988,
+              6.581874477201274
+            ],
+            [
+              7.552360797962573,
+              6.582087966489431
+            ],
+            [
+              7.552464511742462,
+              6.58196879601467
+            ],
+            [
+              7.552315581276967,
+              6.581754885091806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-22",
+        "ParcelID": "P1-22",
+        "phase": "phase-1",
+        "plotId": "22",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 425.27,
+        "Shape_Area": 425.27,
+        "Shape_Leng": 86.22,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552086281705155,
+              6.581680557794846
+            ],
+            [
+              7.551989462498944,
+              6.581797827368073
+            ],
+            [
+              7.5521163501203,
+              6.581996452832686
+            ],
+            [
+              7.552216946739988,
+              6.581874477201274
+            ],
+            [
+              7.552086281705155,
+              6.581680557794846
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-23",
+        "ParcelID": "P1-23",
+        "phase": "phase-1",
+        "plotId": "23",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 482.93,
+        "Shape_Area": 482.93,
+        "Shape_Leng": 92.22,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5521163501203,
+              6.581996452832686
+            ],
+            [
+              7.552253621107542,
+              6.582211333836687
+            ],
+            [
+              7.552360797962573,
+              6.582087966489431
+            ],
+            [
+              7.552216946739988,
+              6.581874477201274
+            ],
+            [
+              7.5521163501203,
+              6.581996452832686
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-24",
+        "ParcelID": "P1-24",
+        "phase": "phase-1",
+        "plotId": "24",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 454.58,
+        "Shape_Area": 454.58,
+        "Shape_Leng": 88.77,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552011063488311,
+              6.5821241103061325
+            ],
+            [
+              7.5521163501203,
+              6.581996452832686
+            ],
+            [
+              7.551989462498944,
+              6.581797827368073
+            ],
+            [
+              7.551883804226228,
+              6.581925794829928
+            ],
+            [
+              7.552011063488311,
+              6.5821241103061325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-25",
+        "ParcelID": "P1-25",
+        "phase": "phase-1",
+        "plotId": "25",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 485.97,
+        "Shape_Area": 485.97,
+        "Shape_Leng": 92.29,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552253621107542,
+              6.582211333836687
+            ],
+            [
+              7.5521163501203,
+              6.581996452832686
+            ],
+            [
+              7.552011063488311,
+              6.5821241103061325
+            ],
+            [
+              7.552146347675836,
+              6.582334930568661
+            ],
+            [
+              7.552253621107542,
+              6.582211333836687
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-26",
+        "ParcelID": "P1-26",
+        "phase": "phase-1",
+        "plotId": "26",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 483.71,
+        "Shape_Area": 483.71,
+        "Shape_Leng": 91.03,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552011063488311,
+              6.5821241103061325
+            ],
+            [
+              7.551883804226228,
+              6.581925794829928
+            ],
+            [
+              7.551770847946896,
+              6.582062545652143
+            ],
+            [
+              7.551899645702377,
+              6.582259203455958
+            ],
+            [
+              7.552011063488311,
+              6.5821241103061325
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-27",
+        "ParcelID": "P1-27",
+        "phase": "phase-1",
+        "plotId": "27",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 502.37,
+        "Shape_Area": 502.37,
+        "Shape_Leng": 93.1,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552146347675836,
+              6.582334930568661
+            ],
+            [
+              7.552011063488311,
+              6.5821241103061325
+            ],
+            [
+              7.551899645702377,
+              6.582259203455958
+            ],
+            [
+              7.552033894168336,
+              6.5824641805886275
+            ],
+            [
+              7.552146347675836,
+              6.582334930568661
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-28",
+        "ParcelID": "P1-28",
+        "phase": "phase-1",
+        "plotId": "28",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 528.74,
+        "Shape_Area": 528.74,
+        "Shape_Leng": 95.77,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5517675004561005,
+              6.582419431094577
+            ],
+            [
+              7.551899645702377,
+              6.582259203455958
+            ],
+            [
+              7.551770847946896,
+              6.582062545652143
+            ],
+            [
+              7.551657892703905,
+              6.582198916619695
+            ],
+            [
+              7.5517675004561005,
+              6.582419431094577
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-29",
+        "ParcelID": "P1-29",
+        "phase": "phase-1",
+        "plotId": "29",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 630.72,
+        "Shape_Area": 630.72,
+        "Shape_Leng": 103.84,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552033894168336,
+              6.5824641805886275
+            ],
+            [
+              7.551899645702377,
+              6.582259203455958
+            ],
+            [
+              7.5517675004561005,
+              6.582419431094577
+            ],
+            [
+              7.551878700281535,
+              6.5826429290373225
+            ],
+            [
+              7.552033894168336,
+              6.5824641805886275
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-30",
+        "ParcelID": "P1-30",
+        "phase": "phase-1",
+        "plotId": "30",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 665.01,
+        "Shape_Area": 665.01,
+        "Shape_Leng": 106.94,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.55294232031367,
+              6.581441774812284
+            ],
+            [
+              7.552835116900424,
+              6.581286458765685
+            ],
+            [
+              7.552634409699795,
+              6.5815001456892706
+            ],
+            [
+              7.552741075338177,
+              6.581657532939193
+            ],
+            [
+              7.55294232031367,
+              6.581441774812284
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-31",
+        "ParcelID": "P1-31",
+        "phase": "phase-1",
+        "plotId": "31",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 643.16,
+        "Shape_Area": 643.16,
+        "Shape_Leng": 105.71,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552835116900424,
+              6.581286458765685
+            ],
+            [
+              7.552727261392018,
+              6.581130256387375
+            ],
+            [
+              7.552534037623392,
+              6.581352930464131
+            ],
+            [
+              7.552634409699795,
+              6.5815001456892706
+            ],
+            [
+              7.552835116900424,
+              6.581286458765685
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-32",
+        "ParcelID": "P1-32",
+        "phase": "phase-1",
+        "plotId": "32",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 654.41,
+        "Shape_Area": 654.41,
+        "Shape_Leng": 106.43,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552727261392018,
+              6.581130256387375
+            ],
+            [
+              7.552622972408169,
+              6.580979101440652
+            ],
+            [
+              7.552425752119854,
+              6.58119410604748
+            ],
+            [
+              7.552534037623392,
+              6.581352930464131
+            ],
+            [
+              7.552727261392018,
+              6.581130256387375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-33",
+        "ParcelID": "P1-33",
+        "phase": "phase-1",
+        "plotId": "33",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 649.52,
+        "Shape_Area": 649.52,
+        "Shape_Leng": 106.05,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552622972408169,
+              6.580979101440652
+            ],
+            [
+              7.552514491883391,
+              6.580821426794283
+            ],
+            [
+              7.5523228045175665,
+              6.581042573313399
+            ],
+            [
+              7.552425752119854,
+              6.58119410604748
+            ],
+            [
+              7.552622972408169,
+              6.580979101440652
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-34",
+        "ParcelID": "P1-34",
+        "phase": "phase-1",
+        "plotId": "34",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 650.53,
+        "Shape_Area": 650.53,
+        "Shape_Leng": 106.33,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552514491883391,
+              6.580821426794283
+            ],
+            [
+              7.552406147180122,
+              6.580664962523799
+            ],
+            [
+              7.552217951232157,
+              6.580888352811003
+            ],
+            [
+              7.5523228045175665,
+              6.581042573313399
+            ],
+            [
+              7.552514491883391,
+              6.580821426794283
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P1-35",
+        "ParcelID": "P1-35",
+        "phase": "phase-1",
+        "plotId": "35",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 750.86,
+        "Shape_Area": 750.86,
+        "Shape_Leng": 111.64,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552406147180122,
+              6.580664962523799
+            ],
+            [
+              7.552303626848409,
+              6.580516429799971
+            ],
+            [
+              7.552073444623032,
+              6.580675822058703
+            ],
+            [
+              7.552217951232157,
+              6.580888352811003
+            ],
+            [
+              7.552406147180122,
+              6.580664962523799
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-01",
+        "ParcelID": "P2-01",
+        "phase": "phase-2",
+        "plotId": "1",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 446.97,
+        "Shape_Area": 446.97,
+        "Shape_Leng": 89.94,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.55257260507283,
+              6.5819604673353505
+            ],
+            [
+              7.552647172760598,
+              6.582076097399752
+            ],
+            [
+              7.552832682828484,
+              6.58187223274803
+            ],
+            [
+              7.552768416358025,
+              6.581771210324679
+            ],
+            [
+              7.55274653559571,
+              6.581769327449823
+            ],
+            [
+              7.55257260507283,
+              6.5819604673353505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-02",
+        "ParcelID": "P2-02",
+        "phase": "phase-2",
+        "plotId": "2",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 448.19,
+        "Shape_Area": 448.19,
+        "Shape_Leng": 91.44,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552647172760598,
+              6.582076097399752
+            ],
+            [
+              7.552721148974855,
+              6.582192380481239
+            ],
+            [
+              7.5529066590721285,
+              6.581988515805805
+            ],
+            [
+              7.552832682828484,
+              6.58187223274803
+            ],
+            [
+              7.552647172760598,
+              6.582076097399752
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-03",
+        "ParcelID": "P2-03",
+        "phase": "phase-2",
+        "plotId": "3",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 448.19,
+        "Shape_Area": 448.19,
+        "Shape_Leng": 91.44,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552721148974855,
+              6.582192380481239
+            ],
+            [
+              7.552795123411407,
+              6.582308663553564
+            ],
+            [
+              7.552980633538078,
+              6.5821047988544
+            ],
+            [
+              7.5529066590721285,
+              6.581988515805805
+            ],
+            [
+              7.552721148974855,
+              6.582192380481239
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-04",
+        "ParcelID": "P2-04",
+        "phase": "phase-2",
+        "plotId": "4",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 448.19,
+        "Shape_Area": 448.19,
+        "Shape_Leng": 91.44,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552795123411407,
+              6.582308663553564
+            ],
+            [
+              7.552869097878883,
+              6.582424946621931
+            ],
+            [
+              7.553054608040169,
+              6.582221080090413
+            ],
+            [
+              7.552980633538078,
+              6.5821047988544
+            ],
+            [
+              7.552795123411407,
+              6.582308663553564
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-05",
+        "ParcelID": "P2-05",
+        "phase": "phase-2",
+        "plotId": "5",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 448.19,
+        "Shape_Area": 448.19,
+        "Shape_Leng": 91.44,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552869097878883,
+              6.582424946621931
+            ],
+            [
+              7.552943072377265,
+              6.582541229686356
+            ],
+            [
+              7.553128582567948,
+              6.582337363131138
+            ],
+            [
+              7.553054608040169,
+              6.582221080090413
+            ],
+            [
+              7.552869097878883,
+              6.582424946621931
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-06",
+        "ParcelID": "P2-06",
+        "phase": "phase-2",
+        "plotId": "6",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 448.19,
+        "Shape_Area": 448.19,
+        "Shape_Leng": 91.44,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.552943072377265,
+              6.582541229686356
+            ],
+            [
+              7.553017046906574,
+              6.582657512746855
+            ],
+            [
+              7.5532025571266335,
+              6.582453646167903
+            ],
+            [
+              7.553128582567948,
+              6.582337363131138
+            ],
+            [
+              7.552943072377265,
+              6.582541229686356
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-07",
+        "ParcelID": "P2-07",
+        "phase": "phase-2",
+        "plotId": "7",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 446.26,
+        "Shape_Area": 446.26,
+        "Shape_Leng": 90.62,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553017046906574,
+              6.582657512746855
+            ],
+            [
+              7.553091021466791,
+              6.582773795803393
+            ],
+            [
+              7.553264360687947,
+              6.582583305166504
+            ],
+            [
+              7.553266825563338,
+              6.582554668576373
+            ],
+            [
+              7.5532025571266335,
+              6.582453646167903
+            ],
+            [
+              7.553017046906574,
+              6.582657512746855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-08",
+        "ParcelID": "P2-08",
+        "phase": "phase-2",
+        "plotId": "8",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 487.16,
+        "Shape_Area": 487.16,
+        "Shape_Leng": 94.09,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5532792195163605,
+              6.583069624140151
+            ],
+            [
+              7.553380038821856,
+              6.582958830037301
+            ],
+            [
+              7.5532320877344565,
+              6.5827262639608755
+            ],
+            [
+              7.553131268455654,
+              6.582837059846589
+            ],
+            [
+              7.5532792195163605,
+              6.583069624140151
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-09",
+        "ParcelID": "P2-09",
+        "phase": "phase-2",
+        "plotId": "9",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 487.16,
+        "Shape_Area": 487.16,
+        "Shape_Leng": 94.09,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5532320877344565,
+              6.5827262639608755
+            ],
+            [
+              7.553380038821856,
+              6.582958830037301
+            ],
+            [
+              7.553480858086945,
+              6.582848034095202
+            ],
+            [
+              7.553332906967598,
+              6.582615468044557
+            ],
+            [
+              7.5532320877344565,
+              6.5827262639608755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-10",
+        "ParcelID": "P2-10",
+        "phase": "phase-2",
+        "plotId": "10",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 487.16,
+        "Shape_Area": 487.16,
+        "Shape_Leng": 94.09,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553480858086945,
+              6.582848034095202
+            ],
+            [
+              7.553581677306371,
+              6.582737238122494
+            ],
+            [
+              7.553433727958477,
+              6.582504673911524
+            ],
+            [
+              7.553332906967598,
+              6.582615468044557
+            ],
+            [
+              7.553480858086945,
+              6.582848034095202
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-11",
+        "ParcelID": "P2-11",
+        "phase": "phase-2",
+        "plotId": "11",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 496.05,
+        "Shape_Area": 496.05,
+        "Shape_Leng": 93.11,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553581677306371,
+              6.582737238122494
+            ],
+            [
+              7.553686934507718,
+              6.582621566159579
+            ],
+            [
+              7.5535446519727785,
+              6.5824088575576685
+            ],
+            [
+              7.553522423263957,
+              6.582407199785395
+            ],
+            [
+              7.553433727958477,
+              6.582504673911524
+            ],
+            [
+              7.553581677306371,
+              6.582737238122494
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-12",
+        "ParcelID": "P2-12",
+        "phase": "phase-2",
+        "plotId": "12",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 447.71,
+        "Shape_Area": 447.71,
+        "Shape_Leng": 86.45,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553485836586072,
+              6.58232092937304
+            ],
+            [
+              7.553410194187443,
+              6.582207846482956
+            ],
+            [
+              7.553244651667909,
+              6.582389768657973
+            ],
+            [
+              7.5533178394680265,
+              6.582504815901872
+            ],
+            [
+              7.55333972026958,
+              6.582506698759167
+            ],
+            [
+              7.553483377480322,
+              6.582348828051363
+            ],
+            [
+              7.553485836586072,
+              6.58232092937304
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-13",
+        "ParcelID": "P2-13",
+        "phase": "phase-2",
+        "plotId": "13",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 451.78,
+        "Shape_Area": 451.78,
+        "Shape_Leng": 88.58,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553244651667909,
+              6.582389768657973
+            ],
+            [
+              7.553410194187443,
+              6.582207846482956
+            ],
+            [
+              7.553323498284967,
+              6.582078238430876
+            ],
+            [
+              7.553160454221608,
+              6.58225741684462
+            ],
+            [
+              7.553244651667909,
+              6.582389768657973
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-14",
+        "ParcelID": "P2-14",
+        "phase": "phase-2",
+        "plotId": "14",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 451.76,
+        "Shape_Area": 451.76,
+        "Shape_Leng": 88.29,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553160454221608,
+              6.58225741684462
+            ],
+            [
+              7.553323498284967,
+              6.582078238430876
+            ],
+            [
+              7.553235458998394,
+              6.581946622489905
+            ],
+            [
+              7.553074951502597,
+              6.582123012036643
+            ],
+            [
+              7.553160454221608,
+              6.58225741684462
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-15",
+        "ParcelID": "P2-15",
+        "phase": "phase-2",
+        "plotId": "15",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 451.04,
+        "Shape_Area": 451.04,
+        "Shape_Leng": 88.0,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553235458998394,
+              6.581946622489905
+            ],
+            [
+              7.553146814961491,
+              6.581812753012013
+            ],
+            [
+              7.55298835595521,
+              6.581986891259423
+            ],
+            [
+              7.553074951502597,
+              6.582123012036643
+            ],
+            [
+              7.553235458998394,
+              6.581946622489905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-16",
+        "ParcelID": "P2-16",
+        "phase": "phase-2",
+        "plotId": "16",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 451.23,
+        "Shape_Area": 451.23,
+        "Shape_Leng": 87.81,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553056998828148,
+              6.581677060623978
+            ],
+            [
+              7.552900595571672,
+              6.5818489385501
+            ],
+            [
+              7.55298835595521,
+              6.581986891259423
+            ],
+            [
+              7.553146814961491,
+              6.581812753012013
+            ],
+            [
+              7.553056998828148,
+              6.581677060623978
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Text": "P2-17",
+        "ParcelID": "P2-17",
+        "phase": "phase-2",
+        "plotId": "17",
+        "Status": "available",
+        "status": "available",
+        "AreaSqm": 460.2,
+        "Shape_Area": 460.2,
+        "Shape_Leng": 87.13,
+        "geometrySource": "arcgis-shapefile",
+        "ownershipGroup": "",
+        "PurchaserName": "",
+        "DisplayPreference": "none"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.553056998828148,
+              6.581677060623978
+            ],
+            [
+              7.552954652934842,
+              6.5815406157222185
+            ],
+            [
+              7.552819572547196,
+              6.581689064510711
+            ],
+            [
+              7.552817107661766,
+              6.581717701094919
+            ],
+            [
+              7.552900595571672,
+              6.5818489385501
+            ],
+            [
+              7.553056998828148,
+              6.581677060623978
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Local tooling and generated caches
+.venv/
+__pycache__/
+*.pyc
+
+# Keep source drawings and reviewed exports, but ignore transient uploads
+uploads/
+tmp/
+

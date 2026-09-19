@@ -1,0 +1,51 @@
+{
+  "estate": {
+    "name": "The Chief Estate Akpalata",
+    "location": "Akparata Ogbeke-Nike, Enugu East LGA, Enugu State",
+    "country": "Nigeria"
+  },
+  "source": {
+    "crs": "EPSG:32632",
+    "crs_name": "WGS84 / UTM zone 32N",
+    "web_crs": "EPSG:4326",
+    "combined_cad_export": "pvp-import/phase-2-export.dxf"
+  },
+  "parcels": {
+    "data_file": "subdivision_data.json",
+    "total": 52,
+    "id_field": "ParcelID",
+    "phase_field": "phase",
+    "area_field": "AreaSqm",
+    "status_field": "Status",
+    "ownership_group_field": "ownershipGroup"
+  },
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "Phase 1",
+      "plot_count": 35
+    },
+    {
+      "id": "phase-2",
+      "name": "Phase 2",
+      "plot_count": 17
+    }
+  ],
+  "ownership_groups": [
+    {
+      "id": "phase-1-purchaser-1-4",
+      "phase": "phase-1",
+      "parcel_ids": [
+        "P1-01",
+        "P1-02",
+        "P1-03",
+        "P1-04"
+      ]
+    }
+  ],
+  "google_sheets": {
+    "sheet_id": "1WjDg0hZ4ePklwf4R6ViRbAqBG-Ry3hxptP4rNJsel7E",
+    "sheet_tab": "THE_CHIEF_ESTATE_AKPALATA_PARCELS",
+    "enabled": true
+  }
+}

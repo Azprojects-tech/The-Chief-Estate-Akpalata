@@ -1,0 +1,307 @@
+{
+  "estate": "The Chief Estate Akpalata",
+  "sourceCompositePdf": "../Ratty layout-Phase 1 & 2.pdf",
+  "coordinateReference": {
+    "sourceText": "MINNA UTM",
+    "status": "needs-surveyor-confirmation",
+    "epsg": null,
+    "utmZone": null,
+    "datum": null
+  },
+  "phases": [
+    {
+      "phaseId": "phase-1",
+      "name": "Phase 1",
+      "source": "composite PDF",
+      "plotCount": 35,
+      "plots": [
+        {
+          "plotId": "1",
+          "areaSqm": 420.02,
+          "areaSource": "arcgis-shapefile",
+          "ownershipGroup": "phase-1-purchaser-1-4"
+        },
+        {
+          "plotId": "2",
+          "areaSqm": 394.15,
+          "areaSource": "arcgis-shapefile",
+          "ownershipGroup": "phase-1-purchaser-1-4"
+        },
+        {
+          "plotId": "3",
+          "areaSqm": 419.57,
+          "areaSource": "arcgis-shapefile",
+          "ownershipGroup": "phase-1-purchaser-1-4"
+        },
+        {
+          "plotId": "4",
+          "areaSqm": 424.31,
+          "areaSource": "arcgis-shapefile",
+          "ownershipGroup": "phase-1-purchaser-1-4"
+        },
+        {
+          "plotId": "5",
+          "areaSqm": 373.7,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "6",
+          "areaSqm": 544.75,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "7",
+          "areaSqm": 592.98,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "8",
+          "areaSqm": 419.6,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "9",
+          "areaSqm": 541.91,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "10",
+          "areaSqm": 415.86,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "11",
+          "areaSqm": 528.15,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "12",
+          "areaSqm": 588.15,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "13",
+          "areaSqm": 411.03,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "14",
+          "areaSqm": 389.88,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "15",
+          "areaSqm": 496.85,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "16",
+          "areaSqm": 435.07,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "17",
+          "areaSqm": 525.54,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "18",
+          "areaSqm": 463.95,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "19",
+          "areaSqm": 503.91,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "20",
+          "areaSqm": 419.65,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "21",
+          "areaSqm": 478.08,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "22",
+          "areaSqm": 425.27,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "23",
+          "areaSqm": 482.93,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "24",
+          "areaSqm": 454.58,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "25",
+          "areaSqm": 485.97,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "26",
+          "areaSqm": 483.71,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "27",
+          "areaSqm": 502.37,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "28",
+          "areaSqm": 528.74,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "29",
+          "areaSqm": 630.72,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "30",
+          "areaSqm": 665.01,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "31",
+          "areaSqm": 643.16,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "32",
+          "areaSqm": 654.41,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "33",
+          "areaSqm": 649.52,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "34",
+          "areaSqm": 650.53,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "35",
+          "areaSqm": 750.86,
+          "areaSource": "arcgis-shapefile"
+        }
+      ]
+    },
+    {
+      "phaseId": "phase-2",
+      "name": "Phase 2",
+      "source": "Ratty Layout phase 2.dwg and composite PDF",
+      "plotCount": 17,
+      "plots": [
+        {
+          "plotId": "1",
+          "areaSqm": 446.97,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "2",
+          "areaSqm": 448.19,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "3",
+          "areaSqm": 448.19,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "4",
+          "areaSqm": 448.19,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "5",
+          "areaSqm": 448.19,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "6",
+          "areaSqm": 448.19,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "7",
+          "areaSqm": 446.26,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "8",
+          "areaSqm": 487.16,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "9",
+          "areaSqm": 487.16,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "10",
+          "areaSqm": 487.16,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "11",
+          "areaSqm": 496.05,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "12",
+          "areaSqm": 447.71,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "13",
+          "areaSqm": 451.78,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "14",
+          "areaSqm": 451.76,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "15",
+          "areaSqm": 451.04,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "16",
+          "areaSqm": 451.23,
+          "areaSource": "arcgis-shapefile"
+        },
+        {
+          "plotId": "17",
+          "areaSqm": 460.2,
+          "areaSource": "arcgis-shapefile"
+        }
+      ]
+    }
+  ],
+  "ownershipGroups": [
+    {
+      "groupId": "phase-1-purchaser-1-4",
+      "phaseId": "phase-1",
+      "plotIds": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "status": "sold",
+      "purchaser": null
+    }
+  ]
+}

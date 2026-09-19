@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PVP Import Review — The Chief Estate Akpalata</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #08111d;
+      --panel: #101e2d;
+      --panel-soft: #15283a;
+      --text: #edf5f3;
+      --muted: #9eb4bd;
+      --accent: #74e0c0;
+      --warning: #f4bd70;
+      --line: rgba(255,255,255,.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font: 15px/1.5 system-ui, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at 85% 0%, #173d47 0, transparent 40%), var(--bg);
+    }
+    main { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 720px; margin: 10px 0; font-size: clamp(2.1rem, 5vw, 4.5rem); line-height: 1; }
+    .lead { max-width: 700px; color: var(--muted); font-size: 1.1rem; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 32px 0; }
+    .card { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: rgba(16,30,45,.86); }
+    .metric { font-size: 2rem; font-weight: 800; color: var(--accent); }
+    .label { color: var(--muted); }
+    .warning { border-color: rgba(244,189,112,.45); }
+    .warning .metric { color: var(--warning); }
+    .table-wrap { overflow-x: auto; }
+    #map { height: 560px; border-radius: 14px; overflow: hidden; background: #d9e5e1; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; }
+    th { color: var(--muted); font-size: .8rem; text-transform: uppercase; }
+    .pill { display: inline-block; padding: 4px 9px; border-radius: 99px; background: var(--panel-soft); color: var(--accent); }
+    .missing { color: var(--warning); }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } main { padding: 28px 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Parcel Vision Pro · Import review</div>
+    <h1>The Chief Estate Akpalata</h1>
+    <p class="lead">A combined estate layer generated from the georeferenced CAD drawing, ready to become the PVP map and ownership workspace.</p>
+    <section class="grid" aria-label="Import summary">
+      <div class="card"><div class="metric">52</div><div class="label">plots across 2 phases</div></div>
+      <div class="card"><div class="metric">17</div><div class="label">Phase 2 areas found</div></div>
+      <div class="card"><div class="metric">UTM 32N</div><div class="label">WGS84 source coordinates</div></div>
+    </section>
+    <section class="card">
+      <h2>Combined estate layer</h2>
+      <p>Phase 1 and Phase 2 are kept distinct even where plot numbers repeat. Phase 1 plots 1–4 are linked to one shared ownership group.</p>
+      <div id="map" aria-label="Combined estate parcel map"></div>
+    </section>
+    <section class="card" style="margin-top:14px">
+      <h2>Phase-aware plot schedule</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Phase</th><th>Plot</th><th>Area</th><th>Source</th><th>Ownership</th></tr></thead>
+          <tbody id="plots"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map', { zoomControl: true }).setView([6.56, 7.55], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const phaseStyle = {
+      'phase-1': { color: '#f4bd70', fillColor: '#f4bd70' },
+      'phase-2': { color: '#168f82', fillColor: '#74e0c0' }
+    };
+
+    fetch('plot-schedule.json')
+      .then(response => response.json())
+      .then(data => {
+        document.querySelector('#plots').innerHTML = data.phases.flatMap(phase => phase.plots.map(plot => `
+          <tr>
+            <td>${phase.name}</td>
+            <td><strong>${plot.plotId}</strong></td>
+            <td>${plot.areaSqm === null ? '<span class="missing">Not yet supplied</span>' : `${plot.areaSqm.toFixed(2)} sqm`}</td>
+            <td><span class="pill">${plot.areaSource}</span></td>
+            <td>${plot.ownershipGroup || '—'}</td>
+          </tr>
+        `)).join('');
+      })
+      .catch(() => {
+        document.querySelector('#plots').innerHTML = '<tr><td colspan="5">Unable to load the extracted schedule.</td></tr>';
+      });
+
+    fetch('combined-parcels.geojson')
+      .then(response => response.json())
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          style: feature => ({
+            ...phaseStyle[feature.properties.phase],
+            weight: 1.5,
+            fillOpacity: feature.properties.status === 'sold' ? 0.8 : 0.42
+          }),
+          onEachFeature: (feature, parcelLayer) => {
+            const p = feature.properties;
+            parcelLayer.bindPopup(
+              `<strong>${p.id}</strong><br>${p.phase.replace('-', ' ')}<br>` +
+              `${p.areaSqm === null ? 'Area not entered' : `${p.areaSqm.toFixed(2)} sqm`}<br>` +
+              `${p.status === 'combined-purchase' ? 'Shared ownership: Phase 1 plots 1–4' : p.status}`
+            );
+          }
+        }).addTo(map);
+        map.fitBounds(layer.getBounds(), { padding: [18, 18] });
+      })
+      .catch(() => {
+        document.querySelector('#map').textContent = 'Unable to load the combined parcel layer.';
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "sourceCrs": "EPSG:32632",
+  "outputCrs": "EPSG:4326",
+  "source": "Shapefiles/Parcels.shp",
+  "phases": {
+    "phase-1": 35,
+    "phase-2": 17
+  },
+  "featureCount": 52,
+  "geometrySources": {
+    "arcgis-shapefile": 52
+  },
+  "ownershipGroups": [
+    {
+      "id": "phase-1-purchaser-1-4",
+      "parcelIds": [
+        "P1-01",
+        "P1-02",
+        "P1-03",
+        "P1-04"
+      ]
+    }
+  ]
+}
