@@ -1362,6 +1362,7 @@
         let googleSheetsData = {}; // REAL source of truth from Google Sheets
         let parcelDatabase = {}; // ENHANCED: Complete parcel database with buyer info
         let hiddenPublicFields = new Set();
+        const WHATSAPP_RECIPIENT = '2348031856498';
 
         function isPublicFieldVisible(fieldName) {
             return !hiddenPublicFields.has(fieldName);
@@ -2419,11 +2420,11 @@
             
             const parcelNumber = cleanParcelNumber(currentSelectedParcel);
             
-            // Create WhatsApp message to A&Z Projects
-            const whatsappMessage = `🏠 NEW INQUIRY - Pineleaf Estate - Oranwezueaku%0A%0A🎯 Interested in: Parcel ${parcelNumber}%0A💰 Listed Price: ₦15,000,000%0A%0A👤 Customer Details:%0A• Name: ${name}%0A• Phone: ${phone}%0A• Email: ${email}%0A%0A💬 Message: ${message || 'No additional message'}%0A%0A⏰ Inquiry sent: ${new Date().toLocaleString()}`;
+            // Create WhatsApp message to the estate contact
+            const whatsappMessage = `🏠 NEW INQUIRY - The Chief Estate Akpalata%0A%0A🎯 Interested in: Parcel ${parcelNumber}%0A💰 Listed Price: ₦15,000,000%0A%0A👤 Customer Details:%0A• Name: ${name}%0A• Phone: ${phone}%0A• Email: ${email}%0A%0A💬 Message: ${message || 'No additional message'}%0A%0A⏰ Inquiry sent: ${new Date().toLocaleString()}`;
             
-            // Open WhatsApp to your number
-            window.open(`https://wa.me/2347042282585?text=${whatsappMessage}`, '_blank');
+            // Open WhatsApp to the estate contact
+            window.open(`https://wa.me/${WHATSAPP_RECIPIENT}?text=${whatsappMessage}`, '_blank');
             
             // Close modal
             closeContactModal();
@@ -2443,8 +2444,8 @@
             // Create direct message to your WhatsApp number
             const message = `🏠 INQUIRY - The Palace Estate%0A%0A🎯 Interested in: Parcel ${parcelNumber}%0A💰 Listed Price: ${formattedPrice}%0A📍 Status: ${statusLabel}%0A%0A👋 Hi! I'm interested in this parcel. Please provide more information.%0A%0A🗺️ Source: ${window.location.href}`;
             
-            // Open WhatsApp DIRECTLY to your number (not modal, not customer choice)
-            window.open(`https://wa.me/2349060646900?text=${message}`, '_blank');
+            // Open WhatsApp DIRECTLY to the estate contact (not customer choice)
+            window.open(`https://wa.me/${WHATSAPP_RECIPIENT}?text=${message}`, '_blank');
         }
         
         function shareOnWhatsApp(parcelId) {
@@ -4985,7 +4986,6 @@ P003        | reserved  | 2025-08-27</pre>
     </div>
 </body>
 </html>
-
 
 
 
