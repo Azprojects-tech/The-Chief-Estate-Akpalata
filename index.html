@@ -1361,6 +1361,14 @@
         let parcelStatus = {}; // Local cache - NOT the source of truth
         let googleSheetsData = {}; // REAL source of truth from Google Sheets
         let parcelDatabase = {}; // ENHANCED: Complete parcel database with buyer info
+
+        // Public popup display controls. Change true/false here, then redeploy.
+        const PUBLIC_DISPLAY = {
+            showPrice: true,
+            showArea: true,
+            showStatus: true,
+            showCoordinates: true
+        };
         
         // ENHANCED: Intelligent price formatting function
         function formatPrice(priceValue) {
@@ -2657,13 +2665,13 @@
             return `
                 <div class="parcel-popup">
                     <h3>🏘️ Parcel ${parcelNumber}</h3>
-                    <p><strong>💰 Price:</strong> ${price}</p>
-                    <p><strong>📐 Area:</strong> ${area}</p>
-                    <p><strong>✅ Status:</strong>
+                    ${PUBLIC_DISPLAY.showPrice ? `<p><strong>💰 Price:</strong> ${price}</p>` : ''}
+                    ${PUBLIC_DISPLAY.showArea ? `<p><strong>📐 Area:</strong> ${area}</p>` : ''}
+                    ${PUBLIC_DISPLAY.showStatus ? `<p><strong>✅ Status:</strong>
                         <span class="status-badge status-${status}">${statusLabel}</span>
-                    </p>
+                    </p>` : ''}
                     ${buyerInfo}
-                    <p><strong>📍 Coordinates:</strong> ${parcelCenter.lat.toFixed(6)}, ${parcelCenter.lng.toFixed(6)}</p>
+                    ${PUBLIC_DISPLAY.showCoordinates ? `<p><strong>📍 Coordinates:</strong> ${parcelCenter.lat.toFixed(6)}, ${parcelCenter.lng.toFixed(6)}</p>` : ''}
                     <hr style="margin: 8px 0;">
                     <div style="text-align: center; margin-top: 8px;">
                         <button onclick="contactUsDirectly('${parcelId}')" 
@@ -4974,7 +4982,6 @@ P003        | reserved  | 2025-08-27</pre>
     </div>
 </body>
 </html>
-
 
 
 

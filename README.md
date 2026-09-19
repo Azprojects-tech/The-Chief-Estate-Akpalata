@@ -44,3 +44,22 @@ the estate or alter the shipped portal.
 2. Load the converted geometry and match parcel labels against the PDF
    schedule.
 3. Add a review/approval step before generating the public Leaflet portal.
+
+## Public popup display controls
+
+The public parcel popup can be configured in `index.html` (and kept in sync
+with `index.html.bak`) using the `PUBLIC_DISPLAY` object near the global map
+variables:
+
+```js
+const PUBLIC_DISPLAY = {
+  showPrice: true,
+  showArea: false,
+  showStatus: true,
+  showCoordinates: true
+};
+```
+
+Set any value to `true` or `false`, then commit and push the change. Google
+Sheets ownership, status, price, and display-preference syncing is separate
+from these presentation controls.
