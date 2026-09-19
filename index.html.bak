@@ -1299,6 +1299,60 @@
             display: none;
         }
 
+        .az-footer {
+            left: 50%;
+            right: auto;
+            bottom: 8px;
+            width: max-content;
+            max-width: calc(100% - 24px);
+            transform: translateX(-50%);
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(23, 32, 51, 0.88);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 10px;
+            line-height: 1.2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            pointer-events: none;
+            z-index: 940;
+        }
+
+        .az-footer a {
+            color: #f0c96d;
+            pointer-events: auto;
+        }
+
+        .parcel-label {
+            background: rgba(255, 255, 255, 0.94) !important;
+            border: 1px solid rgba(23, 32, 51, 0.65) !important;
+            border-radius: 6px !important;
+            color: #172033 !important;
+            box-shadow: 0 1px 4px rgba(23, 32, 51, 0.28) !important;
+            font-size: 9px !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.2px !important;
+            min-width: 24px !important;
+            min-height: 16px !important;
+            padding: 2px 4px !important;
+        }
+
+        .parcel-label-zoom-16 { font-size: 7px !important; }
+        .parcel-label-zoom-17 { font-size: 8px !important; }
+        .parcel-label-zoom-18 { font-size: 9px !important; }
+        .parcel-label-zoom-19,
+        .parcel-label-zoom-20 { font-size: 10px !important; }
+
+        .parcel-number-toggle {
+            background: var(--pvp-ink);
+            border-radius: 10px;
+            min-height: 40px;
+            padding: 8px 11px;
+            font-family: inherit;
+            box-shadow: 0 5px 14px rgba(23, 32, 51, 0.22);
+        }
+
         @media (max-width: 768px) {
             #map {
                 height: calc(100vh - 124px);
@@ -1322,8 +1376,43 @@
                 flex-shrink: 0;
             }
 
-            .client-only {
+            .customer-view .client-only {
                 display: none !important;
+            }
+
+            .client-view .client-only {
+                display: flex !important;
+            }
+
+            .client-view .controls {
+                padding-bottom: calc(10px + env(safe-area-inset-bottom));
+            }
+
+            .client-view .az-footer {
+                bottom: calc(76px + env(safe-area-inset-bottom));
+                max-width: calc(100% - 20px);
+                font-size: 9px;
+            }
+
+            .az-footer {
+                bottom: calc(70px + env(safe-area-inset-bottom));
+                max-width: calc(100% - 20px);
+                font-size: 9px;
+            }
+
+            .legend {
+                z-index: 1300;
+            }
+
+            .legend .admin-toggle {
+                display: block !important;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .client-view .legend .admin-toggle {
+                background: var(--pvp-gold);
+                color: var(--pvp-ink);
             }
 
             .mobile-parcel-sheet.is-open {
@@ -1641,10 +1730,10 @@
         function getParcelColor(parcelId) {
             const status = getRealParcelStatus(parcelId);
             switch (status) {
-                case 'available': return '#28a745';
-                case 'reserved': return '#ffc107';
-                case 'sold': return '#dc3545';
-                default: return '#6c757d';
+                case 'available': return '#63b889';
+                case 'reserved': return '#e2b84f';
+                case 'sold': return '#d96b73';
+                default: return '#8791a1';
             }
         }
         
@@ -4383,9 +4472,9 @@ P003        | reserved  | 2025-08-27</pre>
                         
                         // Update map colors immediately (flexible status handling)
                         const colors = {
-                            'available': '#28a745',
-                            'reserved': '#ffc107', 
-                            'sold': '#dc3545'
+                            'available': '#63b889',
+                            'reserved': '#e2b84f',
+                            'sold': '#d96b73'
                         };
                         const color = colors[newStatus] || '#999999'; // Gray for unknown status
                         
@@ -4531,9 +4620,9 @@ P003        | reserved  | 2025-08-27</pre>
                                 // DIRECT MAP UPDATE - Use parcelLayers instead of map.eachLayer
                                 console.log(`🎨 UPDATING MAP for ${parcelId}...`);
                                 const colors = {
-                                    'available': '#28a745',
-                                    'reserved': '#ffc107', 
-                                    'sold': '#dc3545'
+                                    'available': '#63b889',
+                                    'reserved': '#e2b84f',
+                                    'sold': '#d96b73'
                                 };
                                 
                                 let found = false;
@@ -5196,4 +5285,3 @@ P003        | reserved  | 2025-08-27</pre>
     </div>
 </body>
 </html>
-
