@@ -75,7 +75,7 @@
         padding: 8px 10px;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 600;
         box-shadow: 0 2px 6px rgba(0,0,0,0.15);
         backdrop-filter: blur(5px);
@@ -100,7 +100,7 @@
         background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
         color: white;
         border: none;
-        padding: 6px 12px;
+        padding: 4px 10px;
         border-radius: 20px;
         cursor: pointer;
         font-size: 11px;
@@ -532,7 +532,7 @@
     @media (max-width: 768px) {
         .az-footer {
             position: fixed;
-            bottom: 8px;
+            bottom: 0;
             padding: 3px 6px;
             font-size: 8px;
             height: 18px;
@@ -1203,7 +1203,7 @@
         }
 
         body {
-            font-family: 'Outfit', sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background: #f6f7f9;
         }
 
@@ -1226,7 +1226,7 @@
 
         .controls {
             background: var(--pvp-surface);
-            bottom: 0;
+            bottom: 26px;
             padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
             gap: 8px;
             box-shadow: 0 -5px 20px rgba(23, 32, 51, 0.16);
@@ -1293,6 +1293,8 @@
             border-radius: 10px;
             background: var(--pvp-ink);
             font-family: inherit;
+            top: auto !important;
+            right: auto !important;
         }
 
         .mobile-parcel-sheet {
@@ -1308,7 +1310,7 @@
             transform: translateX(-50%);
             padding: 6px 12px;
             border-radius: 999px;
-            background: rgba(23, 32, 51, 0.88);
+            background: rgba(23, 32, 51, 0.58);
             color: rgba(255, 255, 255, 0.9);
             font-size: 10px;
             line-height: 1.2;
@@ -1325,22 +1327,23 @@
         }
 
         .parcel-label {
-            background: rgba(255, 255, 255, 0.94) !important;
-            border: 1px solid rgba(23, 32, 51, 0.65) !important;
-            border-radius: 6px !important;
+            background: rgba(255, 255, 255, 0.58) !important;
+            border: none !important;
+            border-radius: 4px !important;
             color: #172033 !important;
-            box-shadow: 0 1px 4px rgba(23, 32, 51, 0.28) !important;
-            font-size: 9px !important;
-            font-weight: 700 !important;
-            letter-spacing: -0.2px !important;
-            min-width: 24px !important;
-            min-height: 16px !important;
-            padding: 2px 4px !important;
+            box-shadow: none !important;
+            font-family: Arial, sans-serif !important;
+            font-size: 8px !important;
+            font-weight: 600 !important;
+            letter-spacing: 0 !important;
+            min-width: 20px !important;
+            min-height: 14px !important;
+            padding: 1px 3px !important;
         }
 
         .parcel-label-zoom-16 { font-size: 7px !important; }
         .parcel-label-zoom-17 { font-size: 8px !important; }
-        .parcel-label-zoom-18 { font-size: 9px !important; }
+        .parcel-label-zoom-18 { font-size: 8px !important; }
         .parcel-label-zoom-19,
         .parcel-label-zoom-20 { font-size: 10px !important; }
 
@@ -1386,16 +1389,17 @@
 
             .client-view .controls {
                 padding-bottom: calc(10px + env(safe-area-inset-bottom));
+                bottom: 28px;
             }
 
             .client-view .az-footer {
-                bottom: calc(76px + env(safe-area-inset-bottom));
+                bottom: env(safe-area-inset-bottom);
                 max-width: calc(100% - 20px);
                 font-size: 9px;
             }
 
             .az-footer {
-                bottom: calc(70px + env(safe-area-inset-bottom));
+                bottom: env(safe-area-inset-bottom);
                 max-width: calc(100% - 20px);
                 font-size: 9px;
             }
@@ -1408,6 +1412,9 @@
                 display: block !important;
                 width: 100%;
                 margin-top: 10px;
+                position: relative !important;
+                top: auto !important;
+                right: auto !important;
             }
 
             .client-view .legend .admin-toggle {
@@ -1420,7 +1427,7 @@
                 position: fixed;
                 left: 10px;
                 right: 10px;
-                bottom: calc(66px + env(safe-area-inset-bottom));
+                bottom: calc(92px + env(safe-area-inset-bottom));
                 z-index: 1500;
                 max-height: min(58vh, 430px);
                 overflow-y: auto;
@@ -1466,6 +1473,15 @@
                 color: var(--pvp-muted);
                 font-size: 14px;
                 margin: 9px 0;
+            }
+
+            .mobile-parcel-sheet .parcel-popup {
+                font-family: 'Segoe UI', Arial, sans-serif;
+            }
+
+            .mobile-parcel-sheet .parcel-popup h3 {
+                font-family: 'Segoe UI', Arial, sans-serif;
+                letter-spacing: -0.2px;
             }
         }
 
@@ -1847,6 +1863,9 @@
                                 const popupContent = await createEnhancedPopup(feature);
                                 layer.setPopupContent(popupContent);
                                 showMobileParcelSheet(popupContent);
+                                if (window.matchMedia('(max-width: 768px)').matches) {
+                                    setTimeout(() => layer.closePopup(), 0);
+                                }
                             } catch (error) {
                                 console.log('Error loading popup data:', error);
                                 layer.setPopupContent('Error loading parcel information');
