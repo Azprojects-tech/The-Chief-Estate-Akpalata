@@ -543,7 +543,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
     <meta name="robots" content="noindex, nofollow">
-    <title>The Palace Estate - Real Estate Mapper</title>
+    <title>The Chief Estate Akpalata - Real Estate Mapper</title>
     
     <!-- Configuration -->
     <script src="estate-config.js"></script>
@@ -1193,6 +1193,197 @@
         .landscape-mode .az-footer {
             display: none;
         }
+
+        /* Mobile-first public shell */
+        :root {
+            --pvp-ink: #172033;
+            --pvp-gold: #c99a3e;
+            --pvp-surface: rgba(255, 255, 255, 0.94);
+            --pvp-muted: #697386;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #f6f7f9;
+        }
+
+        .header {
+            background: var(--pvp-surface);
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(23, 32, 51, 0.08);
+            box-shadow: 0 4px 18px rgba(23, 32, 51, 0.12);
+        }
+
+        .header h1 {
+            color: var(--pvp-ink);
+            font-size: 18px;
+            letter-spacing: -0.2px;
+        }
+
+        .header p {
+            color: var(--pvp-muted);
+        }
+
+        .controls {
+            background: var(--pvp-surface);
+            bottom: 0;
+            padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+            gap: 8px;
+            box-shadow: 0 -5px 20px rgba(23, 32, 51, 0.16);
+        }
+
+        .btn {
+            background: var(--pvp-ink);
+            border-radius: 12px;
+            min-height: 42px;
+            padding: 9px 13px;
+            font-family: inherit;
+            font-size: 12px;
+            box-shadow: none;
+        }
+
+        .btn.active,
+        .btn:hover {
+            background: var(--pvp-gold);
+            box-shadow: 0 4px 12px rgba(201, 154, 62, 0.28);
+        }
+
+        #parcelSearch {
+            min-height: 42px !important;
+            border: 1px solid rgba(23, 32, 51, 0.14) !important;
+            border-radius: 12px !important;
+            font-family: inherit !important;
+            font-size: 13px !important;
+            padding: 9px 12px !important;
+            min-width: 124px !important;
+        }
+
+        .legend {
+            top: 12px;
+            right: 12px;
+            width: auto;
+            min-width: 82px;
+            padding: 10px 8px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(23, 32, 51, 0.16);
+        }
+
+        .legend h4 {
+            color: var(--pvp-ink);
+            font-size: 10px;
+        }
+
+        .legend-item {
+            color: var(--pvp-muted);
+            font-size: 9px;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: flex-start;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0;
+        }
+
+        .admin-toggle {
+            min-height: 38px;
+            border-radius: 10px;
+            background: var(--pvp-ink);
+            font-family: inherit;
+        }
+
+        .mobile-parcel-sheet {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            #map {
+                height: calc(100vh - 124px);
+            }
+
+            .header {
+                padding-top: max(10px, env(safe-area-inset-top));
+            }
+
+            .controls {
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                scrollbar-width: none;
+            }
+
+            .controls::-webkit-scrollbar {
+                display: none;
+            }
+
+            .control-group {
+                flex-shrink: 0;
+            }
+
+            .client-only {
+                display: none !important;
+            }
+
+            .mobile-parcel-sheet.is-open {
+                display: block;
+                position: fixed;
+                left: 10px;
+                right: 10px;
+                bottom: calc(66px + env(safe-area-inset-bottom));
+                z-index: 1500;
+                max-height: min(58vh, 430px);
+                overflow-y: auto;
+                padding: 18px 16px 14px;
+                background: #fff;
+                border-radius: 22px;
+                box-shadow: 0 12px 40px rgba(23, 32, 51, 0.28);
+                animation: pvp-sheet-in 180ms ease-out;
+            }
+
+            .mobile-parcel-sheet .sheet-handle {
+                width: 38px;
+                height: 4px;
+                margin: -7px auto 12px;
+                border-radius: 4px;
+                background: #d8dce4;
+            }
+
+            .mobile-parcel-sheet .sheet-close {
+                position: absolute;
+                top: 10px;
+                right: 12px;
+                width: 36px;
+                height: 36px;
+                border: 0;
+                border-radius: 50%;
+                background: #f1f3f6;
+                color: var(--pvp-ink);
+                font-size: 20px;
+            }
+
+            .mobile-parcel-sheet .parcel-popup {
+                max-width: none;
+                padding-top: 3px;
+            }
+
+            .mobile-parcel-sheet .parcel-popup h3 {
+                color: var(--pvp-ink);
+                font-size: 20px;
+            }
+
+            .mobile-parcel-sheet .parcel-popup p {
+                color: var(--pvp-muted);
+                font-size: 14px;
+                margin: 9px 0;
+            }
+        }
+
+        @keyframes pvp-sheet-in {
+            from { transform: translateY(16px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
     </style>
 </head>
 <body class="customer-view">
@@ -1220,7 +1411,7 @@
     <div class="database-panel" id="databasePanel" style="display: none;">
         <div class="database-content">
             <div class="database-header">
-                <h3>🗃️ The Palace Estate - CLIENT DATABASE</h3>
+                <h3>🗃️ The Chief Estate Akpalata - CLIENT DATABASE</h3>
                 <button onclick="closeDatabasePanel()" style="background: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; float: right;">✕ Close</button>
             </div>
             <div class="database-body" id="databaseBody">
@@ -1232,7 +1423,7 @@
     </div>
 
     <div class="header">
-        <h1>The Palace Estate</h1>
+        <h1>The Chief Estate Akpalata</h1>
     </div>
     
     <div class="loading" id="loading" style="display:none">
@@ -1241,6 +1432,11 @@
     </div>
     
     <div id="map"></div>
+    <div class="mobile-parcel-sheet" id="mobileParcelSheet">
+        <div class="sheet-handle"></div>
+        <button class="sheet-close" type="button" aria-label="Close parcel details" onclick="closeMobileParcelSheet()">×</button>
+        <div id="mobileParcelSheetContent"></div>
+    </div>
     
     <div class="legend">
         <h4>Status</h4>
@@ -1561,6 +1757,7 @@
                             try {
                                 const popupContent = await createEnhancedPopup(feature);
                                 layer.setPopupContent(popupContent);
+                                showMobileParcelSheet(popupContent);
                             } catch (error) {
                                 console.log('Error loading popup data:', error);
                                 layer.setPopupContent('Error loading parcel information');
@@ -2077,7 +2274,7 @@
                     .setLatLng(map.getCenter())
                     .setContent(`
                         <div style="text-align: center; padding: 10px;">
-                            <h4 style="color: #2c5f3f; margin: 0 0 8px 0;">🏘️ Viewing The Palace Estate - Enugu</h4>
+                            <h4 style="color: #2c5f3f; margin: 0 0 8px 0;">🏘️ Viewing The Chief Estate Akpalata - Enugu East</h4>
                             <p style="margin: 0; font-size: 12px;">Zoom out to see surrounding landmarks and roads</p>
                         </div>
                     `)
@@ -2442,7 +2639,7 @@
             const formattedPrice = formatPrice(priceValue);
             
             // Create direct message to your WhatsApp number
-            const message = `🏠 INQUIRY - The Palace Estate%0A%0A🎯 Interested in: Parcel ${parcelNumber}%0A💰 Listed Price: ${formattedPrice}%0A📍 Status: ${statusLabel}%0A%0A👋 Hi! I'm interested in this parcel. Please provide more information.%0A%0A🗺️ Source: ${window.location.href}`;
+            const message = `🏠 INQUIRY - The Chief Estate Akpalata%0A%0A🎯 Interested in: Parcel ${parcelNumber}%0A💰 Listed Price: ${formattedPrice}%0A📍 Status: ${statusLabel}%0A%0A👋 Hi! I'm interested in this parcel. Please provide more information.%0A%0A🗺️ Source: ${window.location.href}`;
             
             // Open WhatsApp DIRECTLY to the estate contact (not customer choice)
             window.open(`https://wa.me/${WHATSAPP_RECIPIENT}?text=${message}`, '_blank');
@@ -2456,7 +2653,7 @@
             const parcelData = getParcelData(selectedParcel);
             const priceValue = parcelData.priceNaira && parseFloat(parcelData.priceNaira) > 0 ? parseFloat(parcelData.priceNaira) : 15000000;
             const formattedPrice = formatPrice(priceValue);
-            const message = `🏠 Check out this property at The Palace Estate!%0A%0A📍 Parcel: ${parcelNumber}%0A💰 Price: ${formattedPrice}%0A⭐ Premium location with excellent amenities%0A%0A🗺️ View interactive map: ${window.location.href}%0A%0A📞 Contact us for more info: +2348031856498`;
+            const message = `🏠 Check out this property at The Chief Estate Akpalata!%0A%0A📍 Parcel: ${parcelNumber}%0A💰 Price: ${formattedPrice}%0A⭐ Premium location with excellent amenities%0A%0A🗺️ View interactive map: ${window.location.href}%0A%0A📞 Contact us for more info: +2348031856498`;
             window.open(`https://wa.me/?text=${message}`, '_blank');
         }
         
@@ -2622,6 +2819,19 @@
         }
 
         // Create enhanced popup with pricing
+        function showMobileParcelSheet(content) {
+            const sheet = document.getElementById('mobileParcelSheet');
+            const sheetContent = document.getElementById('mobileParcelSheetContent');
+            if (!sheet || !sheetContent || !window.matchMedia('(max-width: 768px)').matches) return;
+            sheetContent.innerHTML = content;
+            sheet.classList.add('is-open');
+        }
+
+        function closeMobileParcelSheet() {
+            const sheet = document.getElementById('mobileParcelSheet');
+            if (sheet) sheet.classList.remove('is-open');
+        }
+
         async function createEnhancedPopup(feature) {
             // Handle null plot numbers safely
             const textValue = feature.properties.Text;
@@ -2952,7 +3162,7 @@
           }
         }
         
-        // SIMPLIFIED Google Sheets Configuration - THE PALACE ESTATE
+        // SIMPLIFIED Google Sheets Configuration - THE CHIEF ESTATE AKPALATA
         const GOOGLE_SHEETS_CONFIG = {
             spreadsheetId: '1WjDg0hZ4ePklwf4R6ViRbAqBG-Ry3hxptP4rNJsel7E',
             apiKey: 'AIzaSyCkLewazfYqcQ_llw_Adj_mTNK71T2iRL0',
@@ -4808,9 +5018,9 @@ P003        | reserved  | 2025-08-27</pre>
                 return sum + price;
             }, 0);
             
-            // Calculate potential total revenue (all parcels at The Palace Estate default price)
+            // Calculate potential total revenue (all parcels at The Chief Estate Akpalata default price)
             const totalParcels = allParcels.length || 36;
-            const defaultPrice = 15000000; // The Palace Estate default price (updated from Google Sheets)
+            const defaultPrice = 15000000; // The Chief Estate Akpalata default price (updated from Google Sheets)
             const totalPotentialRevenue = totalParcels * defaultPrice;
             const remainingRevenuePotential = totalPotentialRevenue - revenueGenerated - revenueExpected;
             
@@ -4986,6 +5196,4 @@ P003        | reserved  | 2025-08-27</pre>
     </div>
 </body>
 </html>
-
-
 
