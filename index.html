@@ -1209,8 +1209,8 @@
     <!-- Client Login Modal -->
     <div class="client-login" id="clientLogin">
         <div class="login-form">
-            <h3>🔐 Client Access</h3>
-            <input type="password" id="clientPassword" placeholder="Enter client password" onkeyup="handleLoginKeyup(event)">
+            <h3>🔐 Admin Access</h3>
+            <input type="password" id="clientPassword" placeholder="Enter admin password" onkeyup="handleLoginKeyup(event)">
             <button class="login-btn" onclick="authenticateClient()">Login</button>
             <button class="login-btn" onclick="closeLogin()" style="background: #6c757d; margin-top: 10px;">Cancel</button>
         </div>
@@ -2688,7 +2688,7 @@
         
         let currentView = 'customer'; // 'customer' or 'client'
         let isClientAuthenticated = false;
-        const CLIENT_PASSWORD = 'Val2026'; // Change this to a secure password
+        const CLIENT_PASSWORD = 'Chief2026';
         
         // ===== SYSTEM 1: REFERRAL LINK TRACKING =====
         class ReferralSystem {
@@ -3244,7 +3244,7 @@
         // Verify admin password and proceed with update
         function verifyAdminPassword(parcelId, status, buttonElement) {
             const password = document.getElementById('adminPassword').value;
-            const correctPassword = 'MADOX2024ADMIN'; // Change this to your desired admin password
+            const correctPassword = 'Chief2026';
             
             if (password === correctPassword) {
                 // Log the verified admin action
@@ -4974,7 +4974,6 @@ P003        | reserved  | 2025-08-27</pre>
     </div>
 </body>
 </html>
-
 
 
 

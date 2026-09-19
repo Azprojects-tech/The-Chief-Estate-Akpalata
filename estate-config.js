@@ -34,7 +34,7 @@ const ESTATE_CONFIG = {
   },
   
   admin: {
-    password: "",
+    password: "Chief2026",
     features: {
       edit_status: true,
       change_prices: true,
