@@ -29,7 +29,7 @@ const ESTATE_CONFIG = {
   
   google_sheets: {
     sheet_id: "1WjDg0hZ4ePklwf4R6ViRbAqBG-Ry3hxptP4rNJsel7E",
-    sheet_tab: "THE_CHIEF_ESTATE_AKPALATA_PARCELS",
+    sheet_tab: "ownership",
     enabled: true
   },
   
