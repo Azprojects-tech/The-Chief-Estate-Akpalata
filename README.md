@@ -47,19 +47,19 @@ the estate or alter the shipped portal.
 
 ## Public popup display controls
 
-The public parcel popup can be configured in `index.html` (and kept in sync
-with `index.html.bak`) using the `PUBLIC_DISPLAY` object near the global map
-variables:
+The Google Sheet controls which fields appear in the public parcel popup.
+Prefix a column header with `**` to hide that field from the public popup.
+For example, rename `AreaSqm` to `**AreaSqm` when plot sizes should not be
+shown for this estate. The portal strips the prefix when matching the column,
+so values continue to sync normally.
 
-```js
-const PUBLIC_DISPLAY = {
-  showPrice: true,
-  showArea: false,
-  showStatus: true,
-  showCoordinates: true
-};
+Examples:
+
+```text
+**AreaSqm
+**PriceNaira
+**Status
 ```
 
-Set any value to `true` or `false`, then commit and push the change. Google
-Sheets ownership, status, price, and display-preference syncing is separate
-from these presentation controls.
+Remove the `**` prefix to show a field again. This is a per-client setting
+stored in the sheet and does not require a code change or redeployment.

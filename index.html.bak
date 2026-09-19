@@ -1361,14 +1361,11 @@
         let parcelStatus = {}; // Local cache - NOT the source of truth
         let googleSheetsData = {}; // REAL source of truth from Google Sheets
         let parcelDatabase = {}; // ENHANCED: Complete parcel database with buyer info
+        let hiddenPublicFields = new Set();
 
-        // Public popup display controls. Change true/false here, then redeploy.
-        const PUBLIC_DISPLAY = {
-            showPrice: true,
-            showArea: true,
-            showStatus: true,
-            showCoordinates: true
-        };
+        function isPublicFieldVisible(fieldName) {
+            return !hiddenPublicFields.has(fieldName);
+        }
         
         // ENHANCED: Intelligent price formatting function
         function formatPrice(priceValue) {
@@ -2654,9 +2651,9 @@
             if (status === 'sold' || status === 'reserved') {
                 const displayPref = parcelData.displayPreference;
                 
-                if (displayPref === 'name' && parcelData.purchaserName) {
+                if (displayPref === 'name' && parcelData.purchaserName && isPublicFieldVisible('purchasername')) {
                     buyerInfo = `<p><strong>👤 Owned by:</strong> ${parcelData.purchaserName}</p>`;
-                } else if (displayPref === 'purchase_id' && parcelData.purchaseId) {
+                } else if (displayPref === 'purchase_id' && parcelData.purchaseId && isPublicFieldVisible('purchaseid')) {
                     buyerInfo = `<p><strong>📋 Purchase ID:</strong> ${parcelData.purchaseId}</p>`;
                 }
                 // If displayPreference is 'none' or empty, show no buyer info
@@ -2665,13 +2662,13 @@
             return `
                 <div class="parcel-popup">
                     <h3>🏘️ Parcel ${parcelNumber}</h3>
-                    ${PUBLIC_DISPLAY.showPrice ? `<p><strong>💰 Price:</strong> ${price}</p>` : ''}
-                    ${PUBLIC_DISPLAY.showArea ? `<p><strong>📐 Area:</strong> ${area}</p>` : ''}
-                    ${PUBLIC_DISPLAY.showStatus ? `<p><strong>✅ Status:</strong>
+                    ${isPublicFieldVisible('pricenaira') ? `<p><strong>💰 Price:</strong> ${price}</p>` : ''}
+                    ${isPublicFieldVisible('areasqm') ? `<p><strong>📐 Area:</strong> ${area}</p>` : ''}
+                    ${isPublicFieldVisible('status') ? `<p><strong>✅ Status:</strong>
                         <span class="status-badge status-${status}">${statusLabel}</span>
                     </p>` : ''}
                     ${buyerInfo}
-                    ${PUBLIC_DISPLAY.showCoordinates ? `<p><strong>📍 Coordinates:</strong> ${parcelCenter.lat.toFixed(6)}, ${parcelCenter.lng.toFixed(6)}</p>` : ''}
+                    ${isPublicFieldVisible('coordinates') ? `<p><strong>📍 Coordinates:</strong> ${parcelCenter.lat.toFixed(6)}, ${parcelCenter.lng.toFixed(6)}</p>` : ''}
                     <hr style="margin: 8px 0;">
                     <div style="text-align: center; margin-top: 8px;">
                         <button onclick="contactUsDirectly('${parcelId}')" 
@@ -4103,9 +4100,15 @@ P003        | reserved  | 2025-08-27</pre>
                 // FLEXIBLE: Auto-detect column positions from header row
                 const headers = data.values[0];
                 const columnMap = {};
+                hiddenPublicFields = new Set();
                 headers.forEach((header, index) => {
-                    const normalized = String(header || '').toLowerCase().trim();
+                    const rawHeader = String(header || '').trim();
+                    const hidden = rawHeader.startsWith('**');
+                    const normalized = rawHeader.replace(/^\*+/, '').toLowerCase().trim();
                     columnMap[normalized] = index;
+                    if (hidden) {
+                        hiddenPublicFields.add(normalized.replace(/[^a-z0-9]/g, ''));
+                    }
                 });
                 
                 // Find key columns (flexible matching)
@@ -4982,8 +4985,6 @@ P003        | reserved  | 2025-08-27</pre>
     </div>
 </body>
 </html>
-
-
 
 
 
